@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3295a43-0426-4cf1-9214-f931ef119de5" name="Default Changelist" comment="" />
+    <list default="true" id="b3295a43-0426-4cf1-9214-f931ef119de5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pengnian/lc234/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pengnian/lc278/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,16 +22,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pengnian/lc232/MyQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="108">
+              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pengnian/lc234/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
               <folding>
-                <element signature="e#671#672#0" expanded="true" />
-                <element signature="e#692#693#0" expanded="true" />
-                <element signature="e#849#850#0" expanded="true" />
-                <element signature="e#875#876#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pengnian/lc278/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+              <folding>
+                <element signature="e#175#176#0" expanded="true" />
+                <element signature="e#238#239#0" expanded="true" />
+                <element signature="e#982#983#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -37,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pengnian/lc232/MyQueeTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -88,6 +112,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/pengnian/lc225/MyStack.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pengnian/lc232/MyQueeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pengnian/lc232/MyQueue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pengnian/lc234/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pengnian/lc278/Solution.java" />
       </list>
     </option>
   </component>
@@ -101,7 +127,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="828" />
+    <option name="height" value="829" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -112,6 +138,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -153,7 +180,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pengnian" type="462c0819:PsiDirectoryNode" />
-              <item name="lc232" type="462c0819:PsiDirectoryNode" />
+              <item name="lc278" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Leetcode" type="b2602c69:ProjectViewProjectNode" />
@@ -165,7 +192,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,7 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyQueeTest.test">
+  <component name="RunManager" selected="JUnit.Solution.test (1)">
     <configuration name="MyQueeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Leetcode" />
       <extension name="coverage">
@@ -209,21 +235,6 @@
       <option name="MAIN_CLASS_NAME" value="com.pengnian.lc232.MyQueeTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyStackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pengnian.lc225.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.pengnian.lc225" />
-      <option name="MAIN_CLASS_NAME" value="com.pengnian.lc225.MyStackTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -244,32 +255,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyStackTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Solution" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pengnian.lc225.*" />
+          <option name="PATTERN" value="com.pengnian.lc234.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.pengnian.lc225" />
-      <option name="MAIN_CLASS_NAME" value="com.pengnian.lc225.MyStackTest" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="PACKAGE_NAME" value="com.pengnian.lc234" />
+      <option name="MAIN_CLASS_NAME" value="com.pengnian.lc234.Solution" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pengnian.lc278.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pengnian.lc278" />
+      <option name="MAIN_CLASS_NAME" value="com.pengnian.lc278.Solution" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution.test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Solution.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pengnian.lc206.*" />
+          <option name="PATTERN" value="com.pengnian.lc234.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.pengnian.lc206" />
-      <option name="MAIN_CLASS_NAME" value="com.pengnian.lc206.Solution" />
+      <option name="PACKAGE_NAME" value="com.pengnian.lc234" />
+      <option name="MAIN_CLASS_NAME" value="com.pengnian.lc234.Solution" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -278,11 +304,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Solution.test (1)" />
+        <item itemvalue="JUnit.Solution.test" />
+        <item itemvalue="JUnit.Solution" />
         <item itemvalue="JUnit.MyQueeTest.test" />
         <item itemvalue="JUnit.MyStackTest.test" />
-        <item itemvalue="JUnit.MyStackTest.test2" />
-        <item itemvalue="JUnit.MyStackTest" />
-        <item itemvalue="JUnit.Solution.test (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -301,6 +327,8 @@
       <workItem from="1554558663389" duration="10029000" />
       <workItem from="1554688525778" duration="11408000" />
       <workItem from="1554880283523" duration="6867000" />
+      <workItem from="1554969528174" duration="1255000" />
+      <workItem from="1554988895750" duration="2761000" />
     </task>
     <task id="LOCAL-00001" summary="LeetCode刷题">
       <created>1554688778706</created>
@@ -348,39 +376,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyStackTest_test - 2019.04.10 at 16h 29m 34s.xml">
-      <configuration name="MyStackTest.test" configurationId="JUnit" />
+    <history-entry file="Solution_test - 2019.04.11 at 21h 50m 31s.xml">
+      <configuration name="Solution.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyStackTest_test - 2019.04.10 at 16h 31m 26s.xml">
-      <configuration name="MyStackTest.test" configurationId="JUnit" />
+    <history-entry file="Solution_test_(1) - 2019.04.11 at 22h 03m 33s.xml">
+      <configuration name="Solution.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyStackTest - 2019.04.10 at 16h 34m 11s.xml">
-      <configuration name="MyStackTest" configurationId="JUnit" />
+    <history-entry file="Solution_test_(1) - 2019.04.11 at 22h 03m 50s.xml">
+      <configuration name="Solution.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyStackTest_test - 2019.04.10 at 16h 38m 16s.xml">
-      <configuration name="MyStackTest.test" configurationId="JUnit" />
+    <history-entry file="Solution_test_(1) - 2019.04.11 at 22h 04m 03s.xml">
+      <configuration name="Solution.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyStackTest_test2 - 2019.04.10 at 16h 41m 58s.xml">
-      <configuration name="MyStackTest.test2" configurationId="JUnit" />
+    <history-entry file="Solution_test_(1) - 2019.04.11 at 22h 04m 16s.xml">
+      <configuration name="Solution.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyStackTest_test2 - 2019.04.10 at 16h 48m 09s.xml">
-      <configuration name="MyStackTest.test2" configurationId="JUnit" />
+    <history-entry file="Solution_test_(1) - 2019.04.11 at 22h 04m 32s.xml">
+      <configuration name="Solution.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyStackTest_test - 2019.04.10 at 16h 48m 14s.xml">
-      <configuration name="MyStackTest.test" configurationId="JUnit" />
+    <history-entry file="Solution_test_(1) - 2019.04.11 at 22h 06m 00s.xml">
+      <configuration name="Solution.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyQueeTest_test - 2019.04.10 at 16h 59m 51s.xml">
-      <configuration name="MyQueeTest.test" configurationId="JUnit" />
+    <history-entry file="Solution_test_(1) - 2019.04.11 at 22h 06m 57s.xml">
+      <configuration name="Solution.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyQueeTest_test - 2019.04.10 at 17h 03m 09s.xml">
-      <configuration name="MyQueeTest.test" configurationId="JUnit" />
+    <history-entry file="Solution_test_(1) - 2019.04.11 at 22h 07m 51s.xml">
+      <configuration name="Solution.test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyQueeTest_test - 2019.04.10 at 17h 03m 26s.xml">
-      <configuration name="MyQueeTest.test" configurationId="JUnit" />
+    <history-entry file="Solution_test_(1) - 2019.04.11 at 22h 08m 32s.xml">
+      <configuration name="Solution.test (1)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50014000" />
+    <option name="totallyTimeSpent" value="54030000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -392,17 +420,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="828" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="826" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2160229" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22174536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.2527174" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3423913" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.2520436" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.34196186" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32971507" />
@@ -461,6 +489,12 @@
           <line>27</line>
           <properties />
           <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/pengnian/lc278/Solution.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/pengnian/lc232/MyQueue.java</url>
@@ -659,13 +693,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pengnian/lc206.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pengnian/lc206.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pengnian/lc198/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -705,22 +733,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pengnian/lc232/MyQueeTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pengnian/lc232/MyQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state relative-caret-position="108">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pengnian/lc232/MyQueue.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pengnian/lc232/MyQueeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pengnian/lc234/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
           <folding>
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pengnian/lc278/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
           </folding>
         </state>
       </provider>
