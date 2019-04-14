@@ -225,15 +225,6 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="JpaThymeleafApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="spring-boot-jpa-thymeleaf-curd" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.neo.JpaThymeleafApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
