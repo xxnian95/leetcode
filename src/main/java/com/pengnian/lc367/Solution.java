@@ -6,26 +6,38 @@ import org.junit.jupiter.api.Test;
  * @author Zhang Pengnian
  * @date 2019-04-15 21:38
  */
+
+/*
+利用 1+3+5+7+9+…+(2n-1)=n^2，即完全平方数肯定是前n个连续奇数的和
+ */
 class Solution {
 
     @Test
     void test() {
-        long num = 2147483647;
+        int num = 42;
         System.out.println(isPerfectSquare(num));
     }
-//TODO 超时。。。
-    private boolean isPerfectSquare(long num) {
-        if(num==1)
-            return true;
-        for (long i = 2; i <= num / 2; i++) {
-            long res = 1;
-            while (res < num) {
-                res = res * i;
+
+    private boolean isPerfectSquare(int num) {
+
+        if (num > 100000000) {
+            int sum = 0;
+            int d = 1;
+            while (sum < num - d) {
+                sum = sum + d;
+                d = d + 2;
             }
-            if (res == num)
-                return true;
+            sum = sum + d;
+            return sum == num;
+        } else {
+            int sum = 0;
+            int d = 1;
+            while (sum < num) {
+                sum = sum + d;
+                d = d + 2;
+            }
+            return sum == num;
         }
-        return false;
     }
 
 }
