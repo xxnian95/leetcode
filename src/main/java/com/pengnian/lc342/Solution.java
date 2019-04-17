@@ -2,8 +2,6 @@ package com.pengnian.lc342;
 
 import org.junit.jupiter.api.Test;
 
-import static java.lang.Math.abs;
-
 /**
  * @author Zhang Pengnian
  * @date 2019-04-14 11:09
