@@ -8,21 +8,36 @@ import org.junit.jupiter.api.Test;
  */
 class Solution {
 
+
+    private static int[] record;
+    private static boolean firstRunFlag = true;
+
     @Test
     void test() {
-        int n = 3;
+        int n = -1;
         System.out.println(climbStairs(n));
     }
 
-    //FIXME 能运行，但是重复计算太多，时间超出限制
     private int climbStairs(int n) {
 
-        if (n <= 0)
+        if (firstRunFlag) {
+            firstRunFlag = false;
+            record = new int[n + 1];
+            for (int i = 0; i <= n; i++)
+                record[i] = -1;
+        }
+        if(n<0)
             return 0;
-        else if (n == 1)
-            return 1;
-        else if (n == 2)
-            return 2;
-        return climbStairs(n - 1) + climbStairs(n - 2);
+        if (record[n] == -1) {
+            if (n == 0)
+                record[n] = 0;
+            else if (n == 1)
+                record[n] = 1;
+            else if (n == 2)
+                record[n] = 2;
+            else
+                record[n] = climbStairs(n - 1) + climbStairs(n - 2);
+        }
+        return record[n];
     }
 }
