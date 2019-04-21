@@ -2,7 +2,7 @@ package com.pengnian.lc400;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
+import java.util.Stack;
 
 /**
  * @author Zhang Pengnian
@@ -11,31 +11,47 @@ import java.util.ArrayList;
 class Solution {
 
     @Test
-    void test() {
-//        for (int n = 1; n < 20; n++)
+    void test1() {
+        int n = 11;
+        System.out.println(findNthDigit(n));
+    }
+
+    @Test
+    void test2() {
+        int n = 1000000000;
+        System.out.println(findNthDigit(n));
+    }
+
+    @Test
+    void test3() {
         int n = 2147483647;
         System.out.println(findNthDigit(n));
     }
 
+    @Test
+    void test4() {
+        for (int i = 1; i < 20; i++) {
+            System.out.println(findNthDigit(i));
+        }
+    }
+    // FIXME 超时
     private int findNthDigit(int n) {
-        long count = 0;
-        int a = 0;
-        while (count < n) {
-            a++;
-            int digit = 0;
-            int currentNumber = a;
-            while (currentNumber != 0) {
-                currentNumber = currentNumber / 10;
-                digit = digit + 1;
+        int currentNum = 0;
+        Stack<Integer> stack = new Stack<>();
+        while (true) {
+            currentNum++;
+            System.out.println(n);
+            int tmp = currentNum;
+            while (tmp != 0) {
+                stack.add(tmp % 10);
+                tmp = tmp / 10;
             }
-            count = count + digit;
+            while (!stack.isEmpty()) {
+                n--;
+                int lastPushed = stack.pop();
+                if (n == 0)
+                    return lastPushed;
+            }
         }
-        count = count - n;
-        ArrayList<Integer> list = new ArrayList<>();
-        while (a != 0) {
-            list.add(a % 10);
-            a = a / 10;
-        }
-        return list.get(count);
     }
 }
