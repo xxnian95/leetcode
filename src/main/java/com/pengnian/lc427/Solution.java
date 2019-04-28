@@ -8,9 +8,6 @@ import com.pengnian.quadtree.*;
  * @date 2019-04-27 18:00
  */
 
-/*
-
- */
 class Solution {
 
     @Test
