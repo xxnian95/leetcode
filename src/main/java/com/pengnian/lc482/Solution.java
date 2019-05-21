@@ -15,6 +15,7 @@ class Solution {
         System.out.println(licenseKeyFormatting(S, K));
     }
 
+    //  FIXME   从右向左数，每一组是K个字母
     private String licenseKeyFormatting(String S, int K) {
         char[] c = S.toCharArray();
         StringBuilder result = new StringBuilder();
