@@ -27,7 +27,6 @@ class Solution {
         System.out.println(findPairs(nums, k));
     }
 
-    //  FIXME   难以处理k=0以及多个重复元素的情况
     private int findPairs(int[] nums, int k) {
 
 //        HashSet<Integer> set = new HashSet<>();
