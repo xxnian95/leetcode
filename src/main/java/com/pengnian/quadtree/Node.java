@@ -13,9 +13,10 @@ public class Node {
     public Node bottomLeft;
     public Node bottomRight;
 
-    public Node() {}
+    public Node() {
+    }
 
-    public Node(boolean _val,boolean _isLeaf,Node _topLeft,Node _topRight,Node _bottomLeft,Node _bottomRight) {
+    public Node(boolean _val, boolean _isLeaf, Node _topLeft, Node _topRight, Node _bottomLeft, Node _bottomRight) {
         val = _val;
         isLeaf = _isLeaf;
         topLeft = _topLeft;
@@ -23,4 +24,23 @@ public class Node {
         bottomLeft = _bottomLeft;
         bottomRight = _bottomRight;
     }
+
+    public Node(boolean _val) {
+        val = _val;
+        isLeaf = true;
+        topLeft = null;
+        topRight = null;
+        bottomLeft = null;
+        bottomRight = null;
+    }
+
+    public Node(Node _topLeft, Node _topRight, Node _bottomLeft, Node _bottomRight) {
+        val = false;
+        isLeaf = false;
+        topLeft = _topLeft;
+        topRight = _topRight;
+        bottomLeft = _bottomLeft;
+        bottomRight = _bottomRight;
+    }
+
 }
