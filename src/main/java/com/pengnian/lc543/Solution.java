@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  */
 class Solution {
 
-    static private int biggestDiameter;
+    private int biggestDiameter;
 
     @Test
     void test() {
