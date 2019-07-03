@@ -14,19 +14,19 @@ public class Solution {
     @Test
     void test() {
         int[] a = {7, 1, 5, 3, 6, 4};
-        System.out.println(maxProfit(a));
+        System.out.println(maxProfit2(a));
     }
 
     @Test
     void test2() {
-        int[] a = {1,1,0};
-        System.out.println(maxProfit(a));
+        int[] a = {1, 1, 0};
+        System.out.println(maxProfit2(a));
     }
 
     @Test
     void test3() {
-        int[] a = {1,2,3,4,5};
-        System.out.println(maxProfit(a));
+        int[] a = {1, 2, 3, 4, 5};
+        System.out.println(maxProfit2(a));
     }
 
     private static int maxProfit(int[] prices) {
@@ -41,18 +41,30 @@ public class Solution {
             else if (prices[i] <= prices[i + 1])
                 d[i] = 1; // 递增
         }
-        int i=0;
-        while(i<N-1){
+        int i = 0;
+        while (i < N - 1) {
             if (d[i] == 1) {
                 int j = i + 1;
                 while (j < N - 1 && d[j] == 1)
                     j++;
                 sum = sum + (prices[j] - prices[i]);
-                i=j+1;
+                i = j + 1;
             } else
                 i++;
         }
         return sum;
+
+    }
+
+    private static int maxProfit2(int[] prices) {
+
+        int profit = 0;
+        for (int i = 1; i < prices.length; i++) {
+            if (prices[i] > prices[i - 1]) {
+                profit += prices[i] - prices[i - 1];
+            }
+        }
+        return profit;
 
     }
 }
