@@ -29,6 +29,6 @@ class Solution {
             i++;
         }
         return area;
-        
+
     }
 }
