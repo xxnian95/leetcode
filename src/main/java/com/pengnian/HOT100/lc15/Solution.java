@@ -31,6 +31,24 @@ class Solution {
         System.out.println(threeSum(nums));
     }
 
+    @Test
+    void test4() {
+        int[] nums = {-1, 0, 1, 2, -1, -4};
+        System.out.println(threeSum(nums));
+    }
+
+    @Test
+    void test5() {
+        int[] nums = {-4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6};
+        System.out.println(threeSum(nums));
+    }
+
+    @Test
+    void test6() {
+        int[] nums = {-4, -2, 1, -5, -4, -4, 4, -2, 0, 4, 0, -2, 3, 1, -5, 0};
+        System.out.println(threeSum(nums));
+    }
+
     private List<List<Integer>> threeSum(int[] nums) {
 
 //        List<List<Integer>> result = new LinkedList<>();
@@ -57,26 +75,118 @@ class Solution {
 //        return result;
 
         List<List<Integer>> result = new LinkedList<>();
+        if (nums.length < 3)
+            return result;
         Arrays.sort(nums);
-        int indexOfZero = binarySearch(nums, 0, nums.length)
-
-    }
-
-    private int binarySearch(int[] nums, int l, int h, int target) {
-        int mid = (l + h) / 2;
-        if (l < h) {
-            if (nums[mid] == target) {
-                return mid;
-            } else if (target < nums[mid]) {
-                return binarySearch(nums, l, mid - 1, target);
-            } else if (target > nums[mid]) {
-                return binarySearch(nums, mid + 1, h, target);
+        HashMap<Integer, Integer> negative = new HashMap<>(), nonNegative = new HashMap<>();
+        int indexOfFirstZero = 0;
+        int indexOfFirstPositive = 0;
+        for (int x : nums) {
+            if (x < 0) {
+                indexOfFirstZero++;
+                indexOfFirstPositive++;
+                if (negative.containsKey(x)) {
+                    negative.put(x, negative.get(x) + 1);
+                } else {
+                    negative.put(x, 1);
+                }
             } else {
-                return -1;
+                if (x == 0)
+                    indexOfFirstPositive++;
+                if (nonNegative.containsKey(x))
+                    nonNegative.put(x, nonNegative.get(x) + 1);
+                else
+                    nonNegative.put(x, 1);
             }
-        } else if (l == h && nums[l] == target)
-            return l;
-        return -1;
+        }
+        if (nums[0] > 0 || nums[nums.length - 1] < 0)
+            return result;
+        else if ((nums[0] == 0 || nums[nums.length - 1] == 0) && nonNegative.get(0) < 3)
+            return result;
+        //  三个零
+        if (indexOfFirstPositive != indexOfFirstZero && nonNegative.get(0) >= 3) {
+            addToResult(result, 0, 0, 0);
+        }
+        int last = Integer.MIN_VALUE;
+        for (int i = 0; i < indexOfFirstZero; i++) {
+            //  两个相同的负数加上一个正数
+            if (nums[i] == last)
+                continue;
+            last = nums[i];
+            if (negative.get(nums[i]) >= 2) {
+                if (nonNegative.containsKey(-nums[i] * 2)) {
+                    addToResult(result, nums[i], nums[i], -nums[i] * 2);
+                }
+            }
+            //  两个不相同的负数加上一个正数
+            int innerLast = Integer.MIN_VALUE;
+            for (int j = i + 1; j < indexOfFirstZero; j++) {
+                if (innerLast == nums[j] || nums[i] == nums[j])
+                    continue;
+                innerLast = nums[j];
+                if (nonNegative.containsKey(-(nums[i] + nums[j]))) {
+                    addToResult(result, nums[i], nums[j], -(nums[i] + nums[j]));
+                }
+            }
+
+            //  一正一负一零
+            if (nums[indexOfFirstZero] == 0) {
+                if (nonNegative.containsKey(-nums[i])) {
+                    addToResult(result, nums[i], 0, -nums[i]);
+                }
+            }
+        }
+
+        for (int i = indexOfFirstPositive; i < nums.length; i++) {
+            if (nums[i] == last)
+                continue;
+            last = nums[i];
+            //  两个相同的正数加上一个负数
+            if (nonNegative.get(nums[i]) >= 2) {
+                if (negative.containsKey(-2 * nums[i])) {
+                    addToResult(result, nums[i], nums[i], -2 * nums[i]);
+                }
+            }
+            //  两个不相同的正数加上一个负数
+            int innerLast = Integer.MIN_VALUE;
+            for (int j = i + 1; j < nums.length; j++) {
+                if (innerLast == nums[j] || nums[i] == nums[j])
+                    continue;
+                innerLast = nums[j];
+                if (negative.containsKey(-(nums[i] + nums[j]))) {
+                    addToResult(result, nums[i], nums[j], -(nums[i] + nums[j]));
+                }
+            }
+
+        }
+        return result;
 
     }
+
+    private void addToResult(List<List<Integer>> result, int a, int b, int c) {
+        List<Integer> tempList = new ArrayList<>(3);
+        tempList.add(a);
+        tempList.add(b);
+        tempList.add(c);
+        result.add(tempList);
+    }
+
+
+//    private int binarySearch(int[] nums, int l, int h, int target) {
+//        int mid = (l + h) / 2;
+//        if (l < h) {
+//            if (nums[mid] == target) {
+//                return mid;
+//            } else if (target < nums[mid]) {
+//                return binarySearch(nums, l, mid - 1, target);
+//            } else if (target > nums[mid]) {
+//                return binarySearch(nums, mid + 1, h, target);
+//            } else {
+//                return -1;
+//            }
+//        } else if (l == h && nums[l] == target)
+//            return l;
+//        return -1;
+
+//}
 }
