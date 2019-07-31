@@ -1,0 +1,11 @@
+class Solution {
+    public int maxSubArray(int[] nums) {
+
+        if (nums.length == 0)
+            return 0;
+        else if (nums.length == 1) {
+            return 1;
+        }
+        return
+    }
+}
