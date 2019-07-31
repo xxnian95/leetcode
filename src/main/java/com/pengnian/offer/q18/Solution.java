@@ -1,4 +1,4 @@
-package com.pengnian.offer;
+package com.pengnian.offer.q18;
 
 import com.pengnian.listnode.ListNode;
 import com.pengnian.listnode.ListNodeBuild;
