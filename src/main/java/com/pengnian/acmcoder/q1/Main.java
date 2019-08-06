@@ -6,9 +6,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * https://exercise.acmcoder.com/online/online_judge_ques?ques_id=3327&konwledgeId=155
